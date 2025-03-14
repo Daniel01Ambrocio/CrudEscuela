@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|c:\\users\\dan24\\desktop\\portafolio\\proyectos\\webdataaccess\\webdataaccess\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|solutionrelative:webdataaccess\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|c:\\users\\dan24\\desktop\\portafolio\\proyectos\\webdataaccess\\webdataaccess\\data\\divisiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|solutionrelative:webdataaccess\\data\\divisiondata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|c:\\users\\dan24\\desktop\\portafolio\\proyectos\\webdataaccess\\webdataaccess\\presentation\\webdivision.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|solutionrelative:webdataaccess\\presentation\\webdivision.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|c:\\users\\dan24\\desktop\\portafolio\\proyectos\\webdataaccess\\webdataaccess\\bll\\divisionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|solutionrelative:webdataaccess\\bll\\divisionbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|c:\\users\\dan24\\desktop\\portafolio\\proyectos\\webdataaccess\\webdataaccess\\presentation\\webdivision.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{4DDE8AF6-DA80-4559-B4A1-59480E8F801A}|WebDataAccess\\WebDataAccess.csproj|solutionrelative:webdataaccess\\presentation\\webdivision.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Web.config",
+              "RelativeDocumentMoniker": "WebDataAccess\\Web.config",
+              "ToolTip": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Web.config",
+              "RelativeToolTip": "WebDataAccess\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-27T23:27:52.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DivisionData.cs",
+              "DocumentMoniker": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Data\\DivisionData.cs",
+              "RelativeDocumentMoniker": "WebDataAccess\\Data\\DivisionData.cs",
+              "ToolTip": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Data\\DivisionData.cs",
+              "RelativeToolTip": "WebDataAccess\\Data\\DivisionData.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAkwCsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T23:19:39.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DivisionBLL.cs",
+              "DocumentMoniker": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\BLL\\DivisionBLL.cs",
+              "RelativeDocumentMoniker": "WebDataAccess\\BLL\\DivisionBLL.cs",
+              "ToolTip": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\BLL\\DivisionBLL.cs",
+              "RelativeToolTip": "WebDataAccess\\BLL\\DivisionBLL.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T23:18:48.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WebDivision.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Presentation\\WebDivision.aspx.cs",
+              "RelativeDocumentMoniker": "WebDataAccess\\Presentation\\WebDivision.aspx.cs",
+              "ToolTip": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Presentation\\WebDivision.aspx.cs",
+              "RelativeToolTip": "WebDataAccess\\Presentation\\WebDivision.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T23:14:44.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebDivision.aspx",
+              "DocumentMoniker": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Presentation\\WebDivision.aspx",
+              "RelativeDocumentMoniker": "WebDataAccess\\Presentation\\WebDivision.aspx",
+              "ToolTip": "C:\\Users\\dan24\\Desktop\\Portafolio\\Proyectos\\WebDataAccess\\WebDataAccess\\Presentation\\WebDivision.aspx",
+              "RelativeToolTip": "WebDataAccess\\Presentation\\WebDivision.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-02-26T23:58:02.938Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
