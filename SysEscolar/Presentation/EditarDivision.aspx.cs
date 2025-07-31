@@ -11,28 +11,49 @@ namespace SysEscolar.Presentation
 {
     public partial class EditarDivision : System.Web.UI.Page
     {
+        UsuarioEnt usuario = new UsuarioEnt();
+        RolEnt rol = new RolEnt();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                if (Session["IDDivision"] != null)
+                usuario.IDUsuario = (int)Session["IDUsu"];
+                usuario.Status = Session["Status"].ToString();
+                if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
                 {
-                    int iddivision = (int)Session["IDDivision"];
-
-                    if (iddivision > 0)
+                    rol.NombreRol = Session["Rol"].ToString();
+                    if (rol.NombreRol == "Gestor Académico")
                     {
-                        // Aquí puedes autollenar el formulario con los datos de la división
-                        CargarDatosDivision(iddivision);
+                        //Codigo para hacer el crud
+                        if (Session["IDDivision"] != null)
+                        {
+                            int iddivision = (int)Session["IDDivision"];
+
+                            if (iddivision > 0)
+                            {
+                                // Aquí puedes autollenar el formulario con los datos de la división
+                                CargarDatosDivision(iddivision);
+                            }
+                            else
+                            {
+                                Response.Redirect("Divisiones.aspx");
+                            }
+                        }
+                        else
+                        {
+                            Response.Redirect("Divisiones.aspx");
+                        }
                     }
                     else
                     {
-                        Response.Redirect("Divisiones.aspx");
+                        Response.Redirect("index.aspx");
                     }
                 }
                 else
                 {
-                    Response.Redirect("Divisiones.aspx");
+                    Response.Redirect("index.aspx");
                 }
+
             }
         }
         private void CargarDatosDivision(int idDivision)
@@ -54,25 +75,33 @@ namespace SysEscolar.Presentation
 
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
-            DivisionEnt division = new DivisionEnt
+            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtDescripcion.Text))
             {
-                IDDivision = (int)Session["IDDivision"],
-                NombreDivision = txtNombre.Text.Trim(),
-                DescripcionDiv = txtDescripcion.Text.Trim()
-            };
+                DivisionEnt division = new DivisionEnt
+                {
+                    IDDivision = (int)Session["IDDivision"],
+                    NombreDivision = txtNombre.Text.Trim(),
+                    DescripcionDiv = txtDescripcion.Text.Trim()
+                };
 
-            DivisionesBLL bll = new DivisionesBLL();
-            bool actualizado = bll.ActualizarDivision(division);
+                DivisionesBLL bll = new DivisionesBLL();
+                bool actualizado = bll.ActualizarDivision(division);
 
-            if (actualizado)
-            {
-                MostrarAlerta("División actualizada correctamente", true);
-                Response.Redirect("Divisiones.aspx");
+                if (actualizado)
+                {
+                    MostrarAlerta("División actualizada correctamente", true);
+                    Response.Redirect("Divisiones.aspx");
+                }
+                else
+                {
+                    MostrarAlerta("Error al actualizar la división. Intentelo nuevamente.", false);
+                }
             }
             else
             {
-                MostrarAlerta("Error al actualizar la división. Intentelo nuevamente.", false);
+                MostrarAlerta("Formulario incompleto.", false);
             }
+                
         }
         protected void LimpiarFormulario()
         {

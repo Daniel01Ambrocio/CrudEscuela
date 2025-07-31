@@ -13,28 +13,49 @@ namespace SysEscolar.Presentation
 {
     public partial class EditarEdificio : System.Web.UI.Page
     {
+        UsuarioEnt usuario = new UsuarioEnt();
+        RolEnt rol = new RolEnt();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                if (Session["IDEdificio"] != null)
+                usuario.IDUsuario = (int)Session["IDUsu"];
+                usuario.Status = Session["Status"].ToString();
+                if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
                 {
-                    int idEdificio = (int)Session["IDEdificio"];
-
-                    if (idEdificio > 0)
+                    rol.NombreRol = Session["Rol"].ToString();
+                    if (rol.NombreRol == "Gestor Académico")
                     {
-                        // Aquí puedes autollenar el formulario con los datos del edificio
-                        CargarDatosEdificio(idEdificio);
+                        //Codigo para hacer el crud
+                        if (Session["IDEdificio"] != null)
+                        {
+                            int idEdificio = (int)Session["IDEdificio"];
+
+                            if (idEdificio > 0)
+                            {
+                                // Aquí puedes autollenar el formulario con los datos del edificio
+                                CargarDatosEdificio(idEdificio);
+                            }
+                            else
+                            {
+                                Response.Redirect("Edificios.aspx");
+                            }
+                        }
+                        else
+                        {
+                            Response.Redirect("Edificios.aspx");
+                        }
                     }
                     else
                     {
-                        Response.Redirect("Edificios.aspx");
+                        Response.Redirect("index.aspx");
                     }
                 }
                 else
                 {
-                    Response.Redirect("Edificios.aspx");
+                    Response.Redirect("index.aspx");
                 }
+
             }
         }
         private void CargarDatosEdificio(int idEdificio)
@@ -67,7 +88,7 @@ namespace SysEscolar.Presentation
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
             int iddivi = Convert.ToInt32(ddlDivision.SelectedValue);
-            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtDescripcion.Text) &&  iddivi> 0)
+            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtDescripcion.Text) && iddivi > 0)
             {
                 EdificioEnt edificio = new EdificioEnt()
                 {

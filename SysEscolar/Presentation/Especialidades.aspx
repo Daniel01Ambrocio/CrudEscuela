@@ -6,7 +6,7 @@
         <div class="row">
             <!-- Formulario lado izquierdo 1/3 -->
             <div class="col-12 col-md-4 mb-4">
-                <h3 class="mb-3">Agregar Nueva Especialidad</h3>
+                <h3 class="mb-4 text-info">Agregar Nueva Especialidad</h3>
                 <div class="border p-3 rounded shadow-sm bg-light">
                     <div class="mb-3">
                         <asp:Label runat="server" AssociatedControlID="txtNombre" Text="Nombre Especialidad" CssClass="form-label" />
@@ -26,7 +26,7 @@
 
             <!-- GridView lado derecho 2/3 -->
             <div class="col-12 col-md-8">
-                <h2 class="mb-4">Especialidades</h2>
+                <h2 class="mb-4 text-info">Especialidades</h2>
                 <div class="table-responsive">
                     <asp:GridView ID="gvEspecialidades" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered" DataKeyNames="IDEspecialidad" OnRowCommand="gvEspecialidades_RowCommand">
                         <Columns>

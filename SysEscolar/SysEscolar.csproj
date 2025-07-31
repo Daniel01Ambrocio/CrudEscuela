@@ -67,24 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Presentation\CambiarContraseña.aspx" />
     <Content Include="Presentation\Divisiones.aspx" />
     <Content Include="Presentation\Edificios.aspx" />
     <Content Include="Presentation\EditarDivision.aspx" />
     <Content Include="Presentation\EditarEdificio.aspx" />
     <Content Include="Presentation\EditarEspecialidad.aspx" />
+    <Content Include="Presentation\EditarUsuario.aspx" />
     <Content Include="Presentation\Especialidades.aspx" />
+    <Content Include="Presentation\index.aspx" />
+    <Content Include="Presentation\Usuarios.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\DivisionesBLL.cs" />
     <Compile Include="BLL\EdificiosBLL.cs" />
     <Compile Include="BLL\EspecialidadBLL.cs" />
+    <Compile Include="BLL\RolBLL.cs" />
+    <Compile Include="BLL\UsuariosBLL.cs" />
     <Compile Include="DLL\DivisionesDLL.cs" />
     <Compile Include="DLL\EdificiosDLL.cs" />
     <Compile Include="DLL\EspecialidadDLL.cs" />
+    <Compile Include="DLL\RolDLL.cs" />
+    <Compile Include="DLL\UsuariosDLL.cs" />
     <Compile Include="Entities\DivisionEnt.cs" />
     <Compile Include="Entities\EdificioEnt.cs" />
     <Compile Include="Entities\EspecialidadEnt.cs" />
+    <Compile Include="Entities\RolEnt.cs" />
+    <Compile Include="Entities\UsuarioEnt.cs" />
+    <Compile Include="Presentation\CambiarContraseña.aspx.cs">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\CambiarContraseña.aspx.designer.cs">
+      <DependentUpon>CambiarContraseña.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Divisiones.aspx.cs">
       <DependentUpon>Divisiones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -120,6 +137,13 @@
     <Compile Include="Presentation\EditarEspecialidad.aspx.designer.cs">
       <DependentUpon>EditarEspecialidad.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\EditarUsuario.aspx.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\EditarUsuario.aspx.designer.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Especialidades.aspx.cs">
       <DependentUpon>Especialidades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,12 +151,26 @@
     <Compile Include="Presentation\Especialidades.aspx.designer.cs">
       <DependentUpon>Especialidades.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Menu.Master.cs">
       <DependentUpon>Menu.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Presentation\Menu.Master.designer.cs">
       <DependentUpon>Menu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

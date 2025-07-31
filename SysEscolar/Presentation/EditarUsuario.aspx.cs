@@ -1,4 +1,5 @@
 ﻿using SysEscolar.BLL;
+using SysEscolar.DLL;
 using SysEscolar.Entities;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,12 @@ using System.Web.UI.WebControls;
 
 namespace SysEscolar.Presentation
 {
-    public partial class EditarEspecialidad : System.Web.UI.Page
+    public partial class EditarUsuario : System.Web.UI.Page
     {
         UsuarioEnt usuario = new UsuarioEnt();
+        UsuariosBLL usuariosBLL = new UsuariosBLL();
         RolEnt rol = new RolEnt();
+        RolBLL rolBLL = new RolBLL();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -23,27 +26,30 @@ namespace SysEscolar.Presentation
                 if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
                 {
                     rol.NombreRol = Session["Rol"].ToString();
-                    if (rol.NombreRol == "Gestor Académico")
+                    if (rol.NombreRol == "Gestor de Usuarios")
                     {
                         //Codigo para hacer el crud
-                        if (Session["IDEspecialidad"] != null)
+                        if (Session["IDUsuario"] != null)
                         {
-                            int idEspecialidad = (int)Session["IDEspecialidad"];
+                            int idUsuario = (int)Session["IDUsuario"];
 
-                            if (idEspecialidad > 0)
+                            if (idUsuario > 0)
                             {
-                                // Aquí puedes autollenar el formulario con los datos de la Especialidad
-                                CargarDatosEspecialidad(idEspecialidad);
+                                // Aquí puedes autollenar el formulario con los datos de la Usuario
+                                CargarDatosUsuario(idUsuario);
+                                CargarRoles();
+                                CargarStatus();
                             }
                             else
                             {
-                                Response.Redirect("Especialidades.aspx");
+                                Response.Redirect("Usuarios.aspx");
                             }
                         }
                         else
                         {
-                            Response.Redirect("Especialidades.aspx");
+                            Response.Redirect("Usuarios.aspx");
                         }
+
                     }
                     else
                     {
@@ -54,60 +60,69 @@ namespace SysEscolar.Presentation
                 {
                     Response.Redirect("index.aspx");
                 }
-
             }
         }
-        private void CargarDatosEspecialidad(int idEspecialidad)
+        private void CargarDatosUsuario(int idUsuario)
         {
-            EspecialidadBLL especialidadBLL = new EspecialidadBLL();
-            EspecialidadEnt especialidad = especialidadBLL.ObtenerEspecialidadPorID(idEspecialidad);
-            DivisionesBLL divisionesBLL = new DivisionesBLL();
-            if (especialidad != null)
+            usuario = usuariosBLL.ObtenerUsuarioPorID(idUsuario);
+            
+            if (usuario != null)
             {
-                txtNombre.Text = especialidad.NombresEspecialidad;
-                txtDescripcion.Text = especialidad.DescripcionEsp;
-                DataTable dt = divisionesBLL.ObtenerDivisiones();
-
-                ddlDivision.DataSource = dt;
-                ddlDivision.DataTextField = "NombreDivision";  // lo que se muestra
-                ddlDivision.DataValueField = "IDDivision";     // el valor interno
-                ddlDivision.DataBind();
-
-                // Opción opcional al inicio (placeholder)
-                ddlDivision.Items.Insert(0, new ListItem("-- Selecciona una división --", "0"));
-                ddlDivision.SelectedValue = especialidad.DivisionID.ToString();
+                txtNombre.Text = usuario.Nombre;
+                ddlStatus.SelectedValue = usuario.Status.ToString();
+                ddlRol.SelectedValue = usuario.RolID.ToString();
             }
             else
             {
-                // Si no encuentra la especialoidad rediige
-                Response.Redirect("Especialidades.aspx");
+                // Si no encuentra la especialoidad redirige
+                Response.Redirect("Usuarios.aspx");
             }
         }
+        private void CargarRoles()
+        {
+            DataTable dt = rolBLL.ObtenerRoles();
 
+            ddlRol.DataSource = dt;
+            ddlRol.DataTextField = "NombreRol";  // lo que se muestra
+            ddlRol.DataValueField = "IDRol";     // el valor interno
+            ddlRol.DataBind();
+
+            // Opción opcional al inicio (placeholder)
+            ddlRol.Items.Insert(0, new ListItem("-- Selecciona un rol --", "0"));
+        }
+        private void CargarStatus()
+        {
+            // Opción opcional al inicio (placeholder)
+            ddlStatus.Items.Insert(0, new ListItem("-- Selecciona un estatus --", "0"));
+            // Insertar las opciones "Alta" y "Baja" al principio
+            ddlStatus.Items.Insert(1, new ListItem("Alta", "Alta"));
+            ddlStatus.Items.Insert(2, new ListItem("Baja", "Baja"));
+
+
+        }
         protected void btnActualizar_Click(object sender, EventArgs e)
         {
-            int iddivi = Convert.ToInt32(ddlDivision.SelectedValue);
-            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtDescripcion.Text) && iddivi > 0)
+            int idrol = Convert.ToInt32(ddlRol.SelectedValue);
+            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(ddlStatus.SelectedValue) && ddlStatus.SelectedValue != "0" && idrol > 0)
             {
-                EspecialidadEnt especialidad = new EspecialidadEnt()
+                UsuarioEnt Usuario = new UsuarioEnt()
                 {
-                    IDEspecialidad = (int)Session["IDEspecialidad"],
-                    NombresEspecialidad = txtNombre.Text.Trim(),
-                    DescripcionEsp = txtDescripcion.Text.Trim(),
-                    DivisionID = Convert.ToInt32(ddlDivision.SelectedValue)
+                    IDUsuario = (int)Session["IDUsuario"],
+                    Nombre = txtNombre.Text.Trim(),
+                    Status = ddlStatus.SelectedValue.ToString(),
+                    RolID = Convert.ToInt32(ddlRol.SelectedValue)
                 };
 
-                EspecialidadBLL especialidadBLL = new EspecialidadBLL();
-                bool actualizado = especialidadBLL.ActualizarEspecialidad(especialidad);
+                bool actualizado = usuariosBLL.ActualizarUsuario(Usuario);
 
                 if (actualizado)
                 {
-                    MostrarAlerta("Especialidad actualizada correctamente", true);
-                    Response.Redirect("Especialidades.aspx");
+                    MostrarAlerta("Usuario actualizado correctamente", true);
+                    Response.Redirect("Usuarios.aspx");
                 }
                 else
                 {
-                    MostrarAlerta("Error al actualizar la Especialidad. Intentelo nuevamente.", false);
+                    MostrarAlerta("Error al actualizar al Usuario. Intentelo nuevamente.", false);
                 }
             }
             else
@@ -118,8 +133,9 @@ namespace SysEscolar.Presentation
         }
         protected void LimpiarFormulario()
         {
-            txtDescripcion.Text = "";
             txtNombre.Text = "";
+            ddlRol.SelectedIndex = -1;
+            ddlStatus.SelectedIndex = -1;
         }
         protected void MostrarAlerta(string mensaje, bool esExito)
         {
@@ -149,7 +165,7 @@ namespace SysEscolar.Presentation
 
         protected void btnAtras_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Especialidades.aspx");
+            Response.Redirect("Usuarios.aspx");
         }
     }
 }

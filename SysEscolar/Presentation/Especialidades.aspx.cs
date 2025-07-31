@@ -14,12 +14,33 @@ namespace SysEscolar.Presentation
     {
         EspecialidadBLL especialidadBLL = new EspecialidadBLL();
         DivisionesBLL divisionesBLL = new DivisionesBLL();
+        UsuarioEnt usuario = new UsuarioEnt();
+        RolEnt rol = new RolEnt();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarEspecialidades();
-                CargarDivisiones();
+                usuario.IDUsuario = (int)Session["IDUsu"];
+                usuario.Status = Session["Status"].ToString();
+                if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
+                {
+                    rol.NombreRol = Session["Rol"].ToString();
+                    if (rol.NombreRol == "Gestor Académico")
+                    {
+                        //Codigo para hacer el crud
+                        CargarEspecialidades();
+                        CargarDivisiones();
+                    }
+                    else
+                    {
+                        Response.Redirect("index.aspx");
+                    }
+                }
+                else
+                {
+                    Response.Redirect("index.aspx");
+                }
+
             }
         }
 

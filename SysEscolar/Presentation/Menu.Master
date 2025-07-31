@@ -5,7 +5,9 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
@@ -20,14 +22,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item" id="divdivi" runat="server">
                             <asp:HyperLink ID="lnkDivisiones" runat="server" CssClass="nav-link" NavigateUrl="Divisiones.aspx">Divisiones</asp:HyperLink>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="divedi" runat="server">
                             <asp:HyperLink ID="lnkEdificios" runat="server" CssClass="nav-link" NavigateUrl="Edificios.aspx">Edificios</asp:HyperLink>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="divespe" runat="server">
                             <asp:HyperLink ID="lnkEspecialidades" runat="server" CssClass="nav-link" NavigateUrl="Especialidades.aspx">Especialidades</asp:HyperLink>
+                        </li>
+                        <li class="nav-item" id="divusu" runat="server">
+                            <asp:HyperLink ID="lnkUsuarios" runat="server" CssClass="nav-link" NavigateUrl="Usuarios.aspx">Usuarios</asp:HyperLink>
+                        </li>
+                    </ul>
+                    <!-- Opciones de configuración a la derecha -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="CambiarContraseña.aspx">Cambiar Contraseña</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.aspx">Cerrar Sesión</a>
                         </li>
                     </ul>
                 </div>

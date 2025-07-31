@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\divisiones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\divisiones.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\bll\\edificiosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\bll\\edificiosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\dll\\edificiosdll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\dll\\edificiosdll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\bll\\especialidadbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\bll\\especialidadbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\dll\\especialidaddll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\dll\\especialidaddll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +14,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EspecialidadDLL.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\DLL\\EspecialidadDLL.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\DLL\\EspecialidadDLL.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\DLL\\EspecialidadDLL.cs",
-              "RelativeToolTip": "SysEscolar\\DLL\\EspecialidadDLL.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAswKkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:42:38.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EdificiosDLL.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\DLL\\EdificiosDLL.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\DLL\\EdificiosDLL.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\DLL\\EdificiosDLL.cs",
-              "RelativeToolTip": "SysEscolar\\DLL\\EdificiosDLL.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAwKYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:38:12.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EdificiosBLL.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\BLL\\EdificiosBLL.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\BLL\\EdificiosBLL.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\BLL\\EdificiosBLL.cs",
-              "RelativeToolTip": "SysEscolar\\BLL\\EdificiosBLL.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAtwCsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:35:08.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EspecialidadBLL.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\BLL\\EspecialidadBLL.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\BLL\\EspecialidadBLL.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\BLL\\EspecialidadBLL.cs",
-              "RelativeToolTip": "SysEscolar\\BLL\\EspecialidadBLL.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA1wCwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:26:52.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Divisiones.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Divisiones.aspx.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\Divisiones.aspx.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Divisiones.aspx.cs",
-              "RelativeToolTip": "SysEscolar\\Presentation\\Divisiones.aspx.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAArwCwAAAAQAAAAAAAAAA==",
+              "Title": "Usuarios.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Usuarios.aspx.cs",
+              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\Usuarios.aspx.cs",
+              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Usuarios.aspx.cs",
+              "RelativeToolTip": "SysEscolar\\Presentation\\Usuarios.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T21:23:51.553Z",
+              "WhenOpened": "2025-07-31T16:51:39.695Z",
               "EditorCaption": ""
             }
           ]

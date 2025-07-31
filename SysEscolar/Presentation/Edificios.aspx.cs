@@ -14,14 +14,35 @@ namespace SysEscolar.Presentation
 {
     public partial class Edificios : System.Web.UI.Page
     {
+        UsuarioEnt usuario = new UsuarioEnt();
+        RolEnt rol = new RolEnt();
         EdificiosBLL edificiosBLL = new EdificiosBLL();
         DivisionesBLL divisionesBLL = new DivisionesBLL();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                CargarEdificios();
-                CargarDivisiones();
+                usuario.IDUsuario = (int)Session["IDUsu"];
+                usuario.Status = Session["Status"].ToString();
+                if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
+                {
+                    rol.NombreRol = Session["Rol"].ToString();
+                    if (rol.NombreRol == "Gestor Académico")
+                    {
+                        //Codigo para hacer el crud
+                        CargarEdificios();
+                        CargarDivisiones();
+                    }
+                    else
+                    {
+                        Response.Redirect("index.aspx");
+                    }
+                }
+                else
+                {
+                    Response.Redirect("index.aspx");
+                }
+
             }
         }
 

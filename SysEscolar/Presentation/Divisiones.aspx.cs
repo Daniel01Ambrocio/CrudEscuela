@@ -11,6 +11,8 @@ namespace SysEscolar.Presentation
 {
     public partial class Divisiones : System.Web.UI.Page
     {
+        UsuarioEnt usuario = new UsuarioEnt();
+        RolEnt rol = new RolEnt();
         DivisionesBLL divisionesBLL = new DivisionesBLL();
         EspecialidadBLL especialidadBLL = new EspecialidadBLL();
         EdificiosBLL edificiosBLL = new EdificiosBLL();
@@ -19,8 +21,27 @@ namespace SysEscolar.Presentation
         {
             if (!IsPostBack)
             {
-                CargarDivisiones();
-                LimpiarFormulario();
+                usuario.IDUsuario = (int)Session["IDUsu"];
+                usuario.Status = Session["Status"].ToString();
+                if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
+                {
+                    rol.NombreRol = Session["Rol"].ToString();
+                    if (rol.NombreRol == "Gestor Académico")
+                    {
+                        //Codigo para hacer el crud
+                        CargarDivisiones();
+                        LimpiarFormulario();
+                    }
+                    else
+                    {
+                        Response.Redirect("index.aspx");
+                    }
+                }
+                else
+                {
+                    Response.Redirect("index.aspx");
+                }
+
             }
         }
 
@@ -72,7 +93,7 @@ namespace SysEscolar.Presentation
                     // Opcional: mostrar mensaje de error
                     MostrarAlerta("Eliminación fallida. La division está siendo referenciada en la tabla Especialidades.", false);
                 }
-                
+
             }
         }
 
