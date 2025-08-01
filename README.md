@@ -31,7 +31,7 @@ Creado con:
 *Buscar las noticias por fecha y mantener la fecha guardada y cargada en el calendar, sin importar que el usuario cambie de pagina.
 
 
-Cualquier usuario:
+-Cualquier usuario:
 *Puede cambiar su contraseña y pueden volver a su pagina correspondiente
   -Contraseña segura
   *La contraseña debe contener. 6 caracteres como minimo, una letra mayuscula, una letra minuscula y un numero.
