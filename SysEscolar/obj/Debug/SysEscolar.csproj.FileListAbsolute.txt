@@ -57,3 +57,6 @@ C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\obj\Debug\SysEscolar.
 C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\obj\Debug\SysEscolar.csproj.Up2Date
 C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\obj\Debug\SysEscolar.dll
 C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\obj\Debug\SysEscolar.pdb
+C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\bin\Newtonsoft.Json.dll
+C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\bin\Newtonsoft.Json.xml
+C:\Users\CS-HDW-LAP-028\source\repos\SysEscolar\SysEscolar\bin\NewsAPI.dll

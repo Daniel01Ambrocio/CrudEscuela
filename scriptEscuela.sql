@@ -87,7 +87,8 @@ CREATE TABLE Usuarios (
 );
 
 
-INSERT INTO Roles (NombreRol) VALUES 
+INSERT INTO Roles (NombreRol) VALUES
+('Estudiante'),
 ('Gestor de Usuarios'), 
 ('Gestor Académico'); 
 

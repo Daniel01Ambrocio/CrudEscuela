@@ -54,6 +54,11 @@ namespace SysEscolar.Presentation
                             // Redirigir al area de divisiones
                             Response.Redirect("Divisiones.aspx");
                         }
+                        else if (rol.NombreRol == "Estudiante")
+                        {
+                            // Redirigir a la vista del estudiante
+                            Response.Redirect("Estudiante.aspx");
+                        }
 
                     }
                     else

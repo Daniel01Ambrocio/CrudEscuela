@@ -30,6 +30,7 @@ namespace SysEscolar.Presentation
                         divedi.Visible = false;
                         divespe.Visible = false;
                         divusu.Visible = true;
+                        diviestu.Visible = false;
                     }
                     else if (rol.NombreRol == "Gestor Académico")
                     {
@@ -37,6 +38,15 @@ namespace SysEscolar.Presentation
                         divedi.Visible = true;
                         divespe.Visible = true;
                         divusu.Visible = false;
+                        diviestu.Visible = false;
+                    }
+                    else if (rol.NombreRol == "Estudiante")
+                    {
+                        divdivi.Visible = false;
+                        divedi.Visible = false;
+                        divespe.Visible = false;
+                        divusu.Visible = false;
+                        diviestu.Visible = true;
                     }
                     else
                     {

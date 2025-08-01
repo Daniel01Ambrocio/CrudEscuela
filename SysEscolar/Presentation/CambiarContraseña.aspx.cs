@@ -23,8 +23,7 @@ namespace SysEscolar.Presentation
                 usuario.Status = Session["Status"].ToString();
                 if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
                 {
-
-
+                    
                 }
                 else
                 {
@@ -45,6 +44,11 @@ namespace SysEscolar.Presentation
             {
                 // Redirigir al area de divisiones
                 Response.Redirect("Divisiones.aspx");
+            }
+            else if (rol.NombreRol == "Estudiante")
+            {
+                // Redirigir a la vista del Estudiante
+                Response.Redirect("Estudiante.aspx");
             }
         }
         public bool ContraSegura(string password)

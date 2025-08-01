@@ -34,6 +34,9 @@
                         <li class="nav-item" id="divusu" runat="server">
                             <asp:HyperLink ID="lnkUsuarios" runat="server" CssClass="nav-link" NavigateUrl="Usuarios.aspx">Usuarios</asp:HyperLink>
                         </li>
+                        <li class="nav-item" id="diviestu" runat="server">
+                            <asp:HyperLink ID="lnkEstudiantes" runat="server" CssClass="nav-link" NavigateUrl="Estudiantes.aspx">Noticias</asp:HyperLink>
+                        </li>
                     </ul>
                     <!-- Opciones de configuración a la derecha -->
                     <ul class="navbar-nav ms-auto">

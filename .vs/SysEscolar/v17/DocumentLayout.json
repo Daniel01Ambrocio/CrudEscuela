@@ -1,37 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Usuarios.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "RelativeToolTip": "SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T16:51:39.695Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

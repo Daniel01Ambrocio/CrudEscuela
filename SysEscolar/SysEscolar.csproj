@@ -44,6 +44,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NewsAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NewsAPI.0.7.0\lib\portable45-net45+win8+wpa81\NewsAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -75,6 +82,7 @@
     <Content Include="Presentation\EditarEspecialidad.aspx" />
     <Content Include="Presentation\EditarUsuario.aspx" />
     <Content Include="Presentation\Especialidades.aspx" />
+    <Content Include="Presentation\Estudiante.aspx" />
     <Content Include="Presentation\index.aspx" />
     <Content Include="Presentation\Usuarios.aspx" />
     <Content Include="Web.config" />
@@ -93,6 +101,7 @@
     <Compile Include="Entities\DivisionEnt.cs" />
     <Compile Include="Entities\EdificioEnt.cs" />
     <Compile Include="Entities\EspecialidadEnt.cs" />
+    <Compile Include="Entities\NoticiasEnt.cs" />
     <Compile Include="Entities\RolEnt.cs" />
     <Compile Include="Entities\UsuarioEnt.cs" />
     <Compile Include="Presentation\CambiarContraseña.aspx.cs">
@@ -150,6 +159,13 @@
     </Compile>
     <Compile Include="Presentation\Especialidades.aspx.designer.cs">
       <DependentUpon>Especialidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Estudiante.aspx.cs">
+      <DependentUpon>Estudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Estudiante.aspx.designer.cs">
+      <DependentUpon>Estudiante.aspx</DependentUpon>
     </Compile>
     <Compile Include="Presentation\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

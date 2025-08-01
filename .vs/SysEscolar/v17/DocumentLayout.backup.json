@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\estudiante.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\estudiante.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\estudiante.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\estudiante.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Usuarios.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "RelativeToolTip": "SysEscolar\\Presentation\\Usuarios.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
+              "Title": "Estudiante.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Estudiante.aspx.cs",
+              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\Estudiante.aspx.cs",
+              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Estudiante.aspx.cs",
+              "RelativeToolTip": "SysEscolar\\Presentation\\Estudiante.aspx.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCwAAACCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T16:51:39.695Z",
+              "WhenOpened": "2025-08-01T16:21:04.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Estudiante.aspx",
+              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Estudiante.aspx",
+              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\Estudiante.aspx",
+              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\Estudiante.aspx",
+              "RelativeToolTip": "SysEscolar\\Presentation\\Estudiante.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-08-01T16:19:38.347Z",
               "EditorCaption": ""
             }
           ]
