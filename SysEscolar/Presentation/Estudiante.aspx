@@ -21,7 +21,7 @@
         <!-- Fila para el calendario y GridView -->
         <div class="row mb-4">
             <div class="col-md-3">
-                <h4>Filtrar búsqueda por fecha</h4>
+                <h5>Filtrar búsqueda por fecha</h5>
                 <asp:Calendar ID="calFecha" runat="server" CssClass="form-control" />
             </div>
 

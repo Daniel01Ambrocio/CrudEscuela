@@ -19,11 +19,18 @@ namespace SysEscolar.Presentation
         {
             if (!IsPostBack)
             {
-                usuario.IDUsuario = (int)Session["IDUsu"];
-                usuario.Status = Session["Status"].ToString();
-                if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
+                if (Session["IDUsu"] != null )
                 {
-                    
+                    usuario.IDUsuario = (int)Session["IDUsu"];
+                    usuario.Status = Session["Status"].ToString();
+                    if (usuario.IDUsuario > 0 && usuario.Status == "Alta")
+                    {
+
+                    }
+                    else
+                    {
+                        Response.Redirect("index.aspx");
+                    }
                 }
                 else
                 {

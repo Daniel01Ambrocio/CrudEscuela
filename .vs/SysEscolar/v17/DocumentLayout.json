@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|c:\\users\\cs-hdw-lap-028\\source\\repos\\sysescolar\\sysescolar\\presentation\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\sysescolar\\presentation\\cambiarcontrase\u00F1a.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8A6602C-3889-446E-AC0A-F3B4944C809A}|SysEscolar\\SysEscolar.csproj|solutionrelative:sysescolar\\presentation\\cambiarcontrase\u00F1a.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\index.aspx.cs",
+              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\index.aspx.cs",
+              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\index.aspx.cs",
+              "RelativeToolTip": "SysEscolar\\Presentation\\index.aspx.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAowD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T18:11:23.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CambiarContrase\u00F1a.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\CambiarContrase\u00F1a.aspx.cs",
+              "RelativeDocumentMoniker": "SysEscolar\\Presentation\\CambiarContrase\u00F1a.aspx.cs",
+              "ToolTip": "C:\\Users\\CS-HDW-LAP-028\\source\\repos\\SysEscolar\\SysEscolar\\Presentation\\CambiarContrase\u00F1a.aspx.cs",
+              "RelativeToolTip": "SysEscolar\\Presentation\\CambiarContrase\u00F1a.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-01T18:11:03.738Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

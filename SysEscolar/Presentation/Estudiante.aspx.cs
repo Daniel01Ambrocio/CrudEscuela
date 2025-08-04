@@ -1,15 +1,11 @@
 ﻿using NewsAPI;
 using NewsAPI.Constants;
 using NewsAPI.Models;
-using Newtonsoft.Json.Linq;
 using SysEscolar.Entities;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace SysEscolar.Presentation
@@ -57,7 +53,7 @@ namespace SysEscolar.Presentation
                 }
             }
         }
-        // Evento cuando cambia la fecha seleccionada
+        
         
         // Método refactorizado
         public async Task Prueba(string categoria, DateTime? fecha)
@@ -125,7 +121,7 @@ namespace SysEscolar.Presentation
             lblMensaje.Text = mensaje;
         }
 
-        // Método refactorizado para mostrar noticias
+        
 
 
         // Eventos asíncronos de botones
